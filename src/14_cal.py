@@ -22,3 +22,8 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+current = datetime.now()
+def cal_res(month = current.month, year = current.year):
+    print(calendar.month(year, month))
+cal_res()
